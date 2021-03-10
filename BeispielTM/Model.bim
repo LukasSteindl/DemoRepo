@@ -68,6 +68,12 @@
               ]
             }
           }
+        ],
+        "measures": [
+          {
+            "name": "Sum of id",
+            "expression": "SUM([id])"
+          }
         ]
       }
     ],
