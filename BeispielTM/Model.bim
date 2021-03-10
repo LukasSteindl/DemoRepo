@@ -1,0 +1,82 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1500,
+  "model": {
+    "culture": "de-DE",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/localhost;demo",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "localhost",
+            "database": "demo"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "options": {},
+        "credential": {
+          "AuthenticationKind": "ServiceAccount",
+          "EncryptConnection": false
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "Test",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id"
+          },
+          {
+            "name": "x",
+            "dataType": "string",
+            "sourceColumn": "x"
+          },
+          {
+            "name": "Beruf",
+            "dataType": "string",
+            "sourceColumn": "Beruf"
+          },
+          {
+            "name": "Beruf2",
+            "dataType": "string",
+            "sourceColumn": "Beruf2"
+          },
+          {
+            "name": "Vorerkrankung",
+            "dataType": "string",
+            "sourceColumn": "Vorerkrankung"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/localhost;demo\",",
+                "    dbo_Test = Source{[Schema=\"dbo\",Item=\"Test\"]}[Data]",
+                "in",
+                "    dbo_Test"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "600"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
