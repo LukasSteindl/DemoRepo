@@ -5,18 +5,30 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DWHBeispielDB", "DWHBeispielDB\DWHBeispielDB.sqlproj", "{89BB23CE-D602-4051-ACAF-26EAD39288ED}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "BeispielIS", "BeispielIS\BeispielIS.dtproj", "{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Development|Any CPU.Deploy.0 = Debug|Any CPU
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89BB23CE-D602-4051-ACAF-26EAD39288ED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Debug|Any CPU.ActiveCfg = Development
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Debug|Any CPU.Build.0 = Development
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Development|Any CPU.ActiveCfg = Development
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Development|Any CPU.Build.0 = Development
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Release|Any CPU.ActiveCfg = Development
+		{FB3CE66B-7F12-4233-88C2-2DF4B33B2E60}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
